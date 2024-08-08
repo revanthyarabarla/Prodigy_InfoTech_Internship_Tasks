@@ -63,3 +63,34 @@ How to Use:-
 4. Repeat or Exit: You can choose to process another image or exit the script.
 
 ===========================================================================
+Task 3:
+### Explanation
+
+#### How It Works
+
+**Password Strength Evaluation Function (`evaluate_password_strength`)**:
+1. **Define Criteria for Password Strength**:
+    - **Minimum Length**: At least 8 characters.
+    - **Uppercase Letter**: At least one uppercase letter.
+    - **Lowercase Letter**: At least one lowercase letter.
+    - **Digit**: At least one digit.
+    - **Special Character**: At least one special character from the set `!@#$%^&*(),.?":{}|<>`.
+
+2. **Assess Password Strength**:
+    - **Strong Password**: Meets all criteria, returns "Strong password! 👍".
+    - **Weak Password**: Fails any criteria, returns feedback for improvement.
+
+**Main Function (`main`)**:
+1. **User Prompt**: Prompts the user to enter a password.
+2. **Evaluate Password**: Uses 'evaluate_password_strength' to evaluate the input password.
+3. **Print Results**: Prints whether the password is strong or provides feedback for improvement.
+
+### How to Use
+
+1. **Ensure Prerequisites**: Ensure Python is installed.
+2. **Run the Script**: Execute the script in your Python environment.
+3. **Follow Prompts**: Enter your password when prompted.
+4. **Receive Feedback**: The script evaluates your password and provides feedback on its strength.
+
+===========================================================================
+
