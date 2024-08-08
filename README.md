@@ -63,6 +63,7 @@ How to Use:-
 4. Repeat or Exit: You can choose to process another image or exit the script.
 
 ===========================================================================
+
 Task 3:
 ### Explanation
 
