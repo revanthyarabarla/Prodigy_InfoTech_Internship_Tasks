@@ -122,3 +122,34 @@ Task 4:
 
 ===========================================================================
 
+Task 5: 
+### Explanation
+
+#### How It Works
+
+**Packet Sniffing Script (`start_sniffing`)**:
+1. **Network Interface Selection**:
+   - The script starts by specifying the network interface for packet sniffing.
+   
+2. **Packet Capture and Analysis**:
+   - **IP Packets**: The script captures IP packets and extracts the source IP, destination IP, and protocol (TCP/UDP).
+   - **Payload Display**: For TCP/UDP packets, the script attempts to decode and display the first 50 characters of the payload.
+   - **ARP Packets**: If an ARP packet is detected, the script provides a summary of the ARP packet.
+   - **Logging**: Each packet's details are printed to the console for real-time monitoring.
+
+**Main Function (`__main__`)**:
+1. **User Interface**: Specifies the network interface to be monitored.
+2. **Start Sniffing**: Initiates packet sniffing on the specified interface.
+3. **Stopping Sniffing**: The script can be interrupted and stopped using a keyboard interrupt (Ctrl + C).
+
+### How to Use
+
+1. **Prerequisites**: 
+   - Ensure that Python is installed.
+   - Install `npcap-1.79` as it is required for packet capturing on Windows systems.
+   - Install the Scapy library (`pip install scapy`).
+2. **Run the Script**: Execute the script in your Python environment.
+3. **Monitor Traffic**: The script will display network traffic details in the console.
+
+===========================================================================
+
