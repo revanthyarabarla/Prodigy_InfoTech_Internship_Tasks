@@ -95,3 +95,30 @@ Task 3:
 
 ===========================================================================
 
+Task 4:
+### Explanation
+
+#### How It Works
+
+**Keystroke Capture Function (`on_press`)**:
+1. **Logging Keystrokes**:
+   - **Character Logging**: Captures each character typed by the user and adds it to a sentence string.
+   - **Special Key Handling**: Handles special keys such as space and enter by converting them into spaces and newlines, respectively.
+   - **Real-Time Logging**: Logs each captured character or special key action to the `keylog.txt` file.
+
+2. **Key Release Handling (`on_release`)**:
+   - **Exit Condition**: Monitors for the escape key (`esc`) press, which stops the keylogger and exits the script.
+
+**Main Functionality**:
+1. **Start Listening**: The keylogger starts listening for keyboard events and runs continuously.
+2. **Sentence Construction**: As the user types, the current sentence is displayed in real-time in the console.
+
+### How to Use
+
+1. **Ensure Prerequisites**: Ensure Python is installed, and the `pynput` library is available.
+2. **Run the Script**: Execute the script in your Python environment.
+3. **Start Typing**: The script will automatically log every keystroke to the `keylog.txt` file.
+4. **Exit the Script**: Press the escape key (`esc`) to stop the keylogger and exit the script.
+
+===========================================================================
+
